@@ -95,3 +95,39 @@ if (hoursOfSleep >= 5 && hoursOfSleep <= 7) {
 if (hoursOfSleep > 7) {
   console.log("Perfect! You're well-rested and ready to go!");
 }
+
+//1) sa se creeze o variabila care contine temperatura curenta
+// ( poate fi un numar de la 1 la 50 ).
+// daca temperatura e negativa sa se afiseze in consola
+// "Freezing! Wear a heavy coat.",
+// daca temperatura e undeva intre 0 si 20 sa se afiseze
+// "Cool weather, better take a jacket.",
+// daca temperatura este peste 20 sa se afiseze
+// "Cool weather, better take a jacket."
+
+let currentTemperature = 15;
+if (currentTemperature < 0) {
+  console.log("Freezing! Wear a heavy coat.");
+}
+if (currentTemperature >= 0 && currentTemperature <= 20) {
+  console.log("Cool weather, better take a jacket.");
+}
+if (currentTemperature > 20) {
+  console.log("Cool weather, better take a jacket.");
+}
+//2) sa se creeze o variabila care contine nota unui student
+// ( de la 1 la 100 ) . daca nota e sub 50 sa se afiseze
+// "Failed... better luck next time.",
+// daca este intre 50 si 75 sa se afiseze Passed! Good job.",
+// altfel "Excellent! You're a star!"
+
+let notaStudentului = 85;
+if (notaStudentului < 50) {
+  console.log("Failed... better luck next time.");
+}
+if (notaStudentului >= 50 && notaStudentului <= 75) {
+  console.log("Passed! Good job.");
+}
+if (notaStudentului > 75) {
+  console.log("Excellent! You're a star!");
+}
