@@ -131,3 +131,37 @@ if (notaStudentului >= 50 && notaStudentului <= 75) {
 if (notaStudentului > 75) {
   console.log("Excellent! You're a star!");
 }
+
+//Verifică dacă un număr este pozitiv, negativ sau zero:
+
+let num = prompt("Introdu un număr:");
+num = Number(num);
+
+if (num > 0) {
+  console.log("Pozitiv");
+} else if (num < 0) {
+  console.log("Negativ");
+} else {
+  console.log("Este zero");
+}
+
+//Creează variabile pentru numele tău și vârsta ta și
+// afișează-le într-un mesaj, de exemplu:
+// "Salut, eu sunt [numele] și am [vârsta] ani".
+
+const nume = "Alex";
+const varsta = 25;
+
+console.log(`Salut, eu sunt ${nume} și am ${varsta} ani`);
+
+//Folosește o variabilă pentru un număr și
+// verifică dacă este par sau impar,
+// apoi afișează rezultatul.
+
+const numar = 7;
+
+if (numar % 2 === 0) {
+  console.log(`${numar} este par`);
+} else {
+  console.log(`${numar} este impar`);
+}
