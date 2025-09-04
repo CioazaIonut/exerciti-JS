@@ -149,8 +149,8 @@ if (num > 0) {
 // afișează-le într-un mesaj, de exemplu:
 // "Salut, eu sunt [numele] și am [vârsta] ani".
 
-const nume = "Alex";
-const varsta = 25;
+const nume = "Traian";
+const varsta = 34;
 
 console.log(`Salut, eu sunt ${nume} și am ${varsta} ani`);
 
@@ -165,3 +165,39 @@ if (numar % 2 === 0) {
 } else {
   console.log(`${numar} este impar`);
 }
+
+//Sumă a trei numere
+//Creează trei variabile cu valori numerice și afișează suma lor.
+
+const numar1 = 5;
+const numar2 = 8;
+const numar3 = 12;
+
+const suma = numar1 + numar2 + numar3;
+
+console.log(`Suma celor trei numere este: ${suma}`);
+
+//Verificare vârsta și permisul de conducere
+//Scrie un cod care verifică dacă o persoană are peste 18 ani
+// ** și ** are permis de conducere.
+
+const VarsaPersoanei = 20;
+const arePermis = true;
+
+if (VarsaPersoanei > 18 && arePermis) {
+  console.log("Persoana poate conduce.");
+} else {
+  console.log("Persoana nu poate conduce.");
+}
+
+//Validare parole
+//Verifică dacă o parolă respectă două condiții: 
+// are cel puțin 8 caractere ** și ** 
+// conține cel puțin o literă mare.
+
+const parola = "Abcdefgh"; 
+const esteLungă 
+const areLiteraMare 
+
+
+
