@@ -96,6 +96,8 @@ if (hoursOfSleep > 7) {
   console.log("Perfect! You're well-rested and ready to go!");
 }
 
+//////////////////////////////
+
 //1) sa se creeze o variabila care contine temperatura curenta
 // ( poate fi un numar de la 1 la 50 ).
 // daca temperatura e negativa sa se afiseze in consola
@@ -191,13 +193,192 @@ if (VarsaPersoanei > 18 && arePermis) {
 }
 
 //Validare parole
-//Verifică dacă o parolă respectă două condiții: 
-// are cel puțin 8 caractere ** și ** 
+//Verifică dacă o parolă respectă două condiții:
+// are cel puțin 8 caractere ** și **
 // conține cel puțin o literă mare.
 
-const parola = "Abcdefgh"; 
-const esteLungă 
-const areLiteraMare 
+const parola = "Abcdefgh";
+const itIsLong = parola.length >= 8;
+const areLiteraMare = /[A-Z]/.test(parola);
 
+if (itIsLong && areLiteraMare) {
+  console.log("Parola este validă.");
+} else {
+  console.log("Parola nu este validă.");
+}
 
+// Numere pozitive și pare
+// Verifică dacă un număr este pozitiv ** și ** par.
 
+const numarPozitiv = 10;
+
+/* Exercitiu 1 
+Sa se creeze o functie care are 2 parametrii ( x, y ) reprezentand 2 numere.
+Functia sa afiseze in consola diferenta lor*/
+
+let diferenta = (x, y) => {
+  console.log(x - y);
+};
+
+diferenta(7, 9);
+
+/* Exercitiu 2
+Sa se creeze o functie care are 2 parametrii ( x, y ) reprezentand 2 numere.
+Functia sa afiseze in consola produsul lor*/
+
+let produsul = (x, y) => {
+  console.log(x * y);
+};
+
+produsul(14, 5);
+
+/* Exercitiu 3
+Sa se creeze o functie care are 2 parametrii ( x, y ) reprezentand 2 numere.
+Functia sa afiseze in consola impartirea lor*/
+
+let impartirea = (x, y) => {
+  console.log(x / y);
+};
+
+impartirea(11, 9);
+
+/* Exercitiu 4
+Sa se creeze o funcție care are un parametru ( varstaMea ) reprezentând un număr. Funcția sa afișeze în consola “Varsta mea este “ + varstaMea.*/
+
+let afiseazaVarstaMea = (varstaMea) => {
+  console.log("Varsta mea este " + varstaMea);
+};
+
+afiseazaVarstaMea(19);
+
+// let varstaMea = "32";
+// console.log("Varsta mea este " + varstaMea);
+
+/* Exercitiu 5
+Sa se creeze o funcție care are un parametru ( numeleMeu ) reprezentând un string. Funcția sa afișeze în consola “Numele meu este “ + numeleMeu.*/
+
+let afiseazaNumeleMeu = (numeleMeu) => {
+  console.log("Numele meu este " + numeleMeu);
+};
+
+afiseazaNumeleMeu("ABc");
+
+//const name = "numele Meu Este ";
+//console.log(name + "Ionut");
+
+/* Exercitiu 6
+Sa se creeze o functie care are 2 parametrii ( numeleMeu, varstaMea ) reprezentand un string și un număr.
+Functia sa afiseze in consola un string construit din cei 2 parametrii ca în exemplu:
+Dacă funcția este apelată cu argumentele “Andrei” și 30, funcția sa afișeze în consola “Numele meu este Andrei și am 30 de ani”.*/
+
+let afiseazaNumeleMeuSiVarsta = (numeleMeu, varstaMea) => {
+  console.log(
+    "Numele meu este " + numeleMeu + " și am " + varstaMea + " de ani"
+  );
+};
+
+afiseazaNumeleMeuSiVarsta("Ionut", 32);
+
+//const name = "Andrei";
+//const age = 30;
+//const greeting = "numele mau este " + name + " si am " + age + " ani";
+//console.log (greeting);
+
+/* Exercitiu 7 
+Sa se creeze o funcție care are un parametru ( numeleMeu ) reprezentând un string. Funcția sa afișeze în consola “Numele meu are “ + numărul de caractere al numelui + “ caractere “.*/
+
+let afiseazaNumarulDeCaractereAleNumeluiMeu = (numeleMeu) => {
+  console.log("Numele meu are " + numeleMeu.length + " caractere");
+};
+
+afiseazaNumarulDeCaractereAleNumeluiMeu("Ionut");
+
+/*const name = "Ionut";
+let lenght = 5;
+//let lenght = name.lenght;
+console.log("Numele meu are " + name.length + " caractere")*/
+
+// Exercitiu 1: Verificare dacă un număr este pozitiv sau negativ
+//Scrie un cod care verifică dacă un număr este
+// mai mare ca 0 ** sau ** mai mic ca 0.
+
+let numberToVerify = -3;
+
+if (numberToVerify > 0) {
+  console.log("Numarul este pozitiv");
+}
+if (numberToVerify < 0) {
+  console.log("Numarul este negativ");
+}
+
+const number = -5;
+
+if (number > 0 || number < 0) {
+  console.log("Numărul este diferit de zero");
+} else {
+  console.log("Numărul este zero");
+}
+
+//Exercitiu 2: Validare introducere
+//Verifică dacă o variabilă conține fie 'da' ** sau ** 'nu'.
+
+let userImput = "da";
+
+if (raspuns === "da" || raspuns === "nu") {
+  console.log("Răspuns valid");
+} else {
+  console.log("Răspuns invalid");
+}
+
+//Exercitiu 3: Trestare dacă e weekend sau e după ora 18
+//Verifică dacă ziua e sâmbătă sau duminică ** sau **
+// dacă ora e după 18:00.
+
+const zi = "vineri";
+const ora = 19;
+
+if (zi === "sâmbătă" || zi === "duminică" || ora > 18) {
+  console.log("E timpul liber!");
+} else {
+  console.log("E ora de muncă.");
+}
+
+//Exercitiu 4: Verificare dacă cel puțin una dintre condiții e adevărată
+//Scrie un cod care verifică dacă o persoană are peste
+// 50 de ani ** sau ** este profesor.
+
+const teacherAge = 68;
+const esteProfesor = false;
+
+if (varsta > 50 || esteProfesor) {
+  console.log("Ești fie peste 50 de ani, fie profesor.");
+} else {
+  console.log("Nu ești nici peste 50, nici profesor.");
+}
+
+//Exercitiu 5: Verificare metode de autentificare
+//Verifică dacă trebuie să te autentifici fie cu
+// emailul ** sau ** cu numărul de telefon.
+
+const emailul = "cioazai@yahoo.com";
+const telefonul = "0748845769";
+
+if (emailul !== "" || telefonul !== "") {
+  console.log("successfuluAthentication");
+} else {
+  console.log("theFieldUsRequiredToBeCompleted..");
+}
+
+//Exercitiu 6: Verifică dacă poți merge afară
+//Ești liber dacă e ploaie ** sau ** dacă ai mop și prosop,
+//  pentru a șterge apa.
+
+const ploua = true;
+const areMop = false;
+const areProsop = true;
+
+if (ploua || (areMop && areProsop)) {
+  console.log("Poți merge afară");
+} else {
+  console.log("Trebuie să stai înăuntru");
+}
