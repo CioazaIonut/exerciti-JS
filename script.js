@@ -382,3 +382,12 @@ if (ploua || (areMop && areProsop)) {
 } else {
   console.log("Trebuie să stai înăuntru");
 }
+
+//Exercitiu 1: Sumă simplă a două variabile
+//Creează două variabile cu valori numerice și afișează suma lor.
+
+const numarUnu = 10;
+const numarDoi = 5;
+
+const sumaTotal = numar1 + numar2;
+console.log("Suma este: " + suma);
